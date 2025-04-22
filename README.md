@@ -7,7 +7,7 @@ A one-click video compression tool with FFmpeg built-in.
 ## 📦 Installation
 
 1. **Download** the latest release from:  
-   [Releases Page](https://github.com/yourusername/VideoCompressor/releases)
+   [Releases Page](https://github.com/RayanNight/VideoCompressor/releases)
 2. **Extract** `VideoCompressor.zip`
 3. **Run** `VideoCompressor.exe`
 
