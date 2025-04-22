@@ -1,0 +1,31 @@
+﻿<Window x:Class="VideoCompressor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simple Video Compressor" Height="350" Width="500">
+    <Grid Margin="10">
+        <StackPanel>
+            <!-- File Selection -->
+            <Button x:Name="BrowseButton" Content="Browse Video" Click="BrowseButton_Click" Height="50" Margin="0,0,0,10" FontSize="20"/>
+            <TextBlock x:Name="SelectedFileText" Text="(No file selected)" Margin="0,0,0,10" TextAlignment="Center" FontSize="15" FontWeight="Bold"/>
+
+            <!-- Quality Slider -->
+            <TextBlock Text="Better Quality, Larger File                                            Worse Quality, Smaller File" Margin="0,10,0,0" TextAlignment="Center"/>
+            <Slider x:Name="QualitySlider" Minimum="1" Maximum="51" Value="26" TickFrequency="1" IsSnapToTickEnabled="True" Margin="0,5,0,10"/>
+            <TextBlock x:Name="QualityValueText" Text="CRF: 23" HorizontalAlignment="Center"/>
+
+            <!-- Compress Button -->
+            <Button x:Name="CompressButton" Content="Compress Video" Click="CompressButton_Click" Height="30" Margin="0,10,0,10" Foreground="White" FontWeight="Bold">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                        <GradientStop Color="#FF595BD6" Offset="0.306"/>
+                        <GradientStop Color="#FFC051BF" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+            <!-- Progress -->
+            <ProgressBar x:Name="ProgressBar" Height="20" Margin="0,10,0,5" IsIndeterminate="False"/>
+            <TextBlock x:Name="StatusText" Text="Ready" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,8 @@
+{
+    "profiles": {
+        "VideoCompressor": {
+            "commandName": "Project",
+            "hotReloadEnabled": true
+        }
+    }
+}
