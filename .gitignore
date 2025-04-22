@@ -12,8 +12,35 @@
 x64/
 x86/
 
+### Custom Rules (Add these at the top) ###
+# FFmpeg binary - CRITICAL to exclude
+ffmpeg.exe
+ffmpeg-*.exe
+FFmpeg/
+
+# Build outputs (reinforced)
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# Release/Debug folders (reinforced)
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+### VisualStudio ### (Keep existing rules below)
+.vs/
+*.user
+*.suo
+*.cache
+*.rsuser
+
 # FFmpeg binary
 ffmpeg.exe
+bin/Release/
+bin/Debug/
 
 # User-specific files
 *.rsuser
@@ -423,3 +450,5 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio
+ 
+ 
